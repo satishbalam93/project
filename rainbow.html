@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>RAINBOW</title>
+    <style>
+    	body {
+    		text-align: center;
+    		margin: 20%;
+            background-color: skyblue;
+    	}
+    	button{
+    		cursor: pointer;
+    		background-color: pink;
+    	}
+
+    </style>
+</head>
+<body>
+	<h1>DAZZLING RAINBOW--!</h1>
+	<button><h3>Touch here!</h3></button> 
+    <script>
+    	const btn=document.querySelector('button'); 
+    	const body=document.querySelector('body');
+    	const color=['voilet','indigo','blue','green','yellow','orange','red'];
+    	btn.addEventListener('click', function(){
+    	const colorIndex=parseInt(Math.random()*color.length);
+    	body.style.backgroundColor=color[colorIndex];})
+    
+</script> 
+</body>
+</html>
